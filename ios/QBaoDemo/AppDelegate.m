@@ -39,8 +39,6 @@
 #if !_OS
   jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle?platform=ios&dev=true"];
 #else
-  
-  
   /**
    * OPTION 2
    * Load from pre-bundled file on disk. The static bundle is automatically
