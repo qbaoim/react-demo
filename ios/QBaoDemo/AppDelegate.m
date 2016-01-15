@@ -11,10 +11,10 @@
 
 #import "RCTRootView.h"
 
-#if TARGET_OS_IPHONE
-#define _OS 1
+#if TARGET_IPHONE_SIMULATOR
+#define _OS    0
 #else
-#define _OS 0
+#define _OS    1
 #endif
 
 @implementation AppDelegate
@@ -36,7 +36,7 @@
    * `inet` value under `en0:`) and make sure your computer and iOS device are
    * on the same Wi-Fi network.
    */
-#if !_OS
+#if (!_OS)
   jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle?platform=ios&dev=true"];
 #else
   /**
