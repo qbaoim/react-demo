@@ -42,7 +42,7 @@ var TabBar = React.createClass({
 
   getInitialState: function() {
     return {
-      selectedTab: 'qb', //默认初始状态
+	  selectedIndex : 0, //默认初始状态
       notifCount: 0,
       presses: 0,
     };
@@ -81,11 +81,12 @@ var TabBar = React.createClass({
 		{/**首页*/}
         <TabBarIOS.Item
           title="钱宝"
-          selected={this.state.selectedTab === 'qb'}
-		  icon = {this.state.selectedTab === 'qb' ? require('./res/tabbar/index_1_selected@2x.png') : require('./res/tabbar/index_1_normal@2x.png')}
+		  selected={this.state.selectedIndex == 0}
+		  icon = {require('./res/tabbar/index_1_normal@2x.png')}
+		  selectedIcon = {require('./res/tabbar/index_1_selected@2x.png')}
           onPress={() => {
             this.setState({
-              selectedTab: 'qb',
+			  selectedIndex: 0,
             });
           }}>
           
@@ -93,13 +94,15 @@ var TabBar = React.createClass({
         </TabBarIOS.Item>
 		{/**广场*/}
         <TabBarIOS.Item
-		  icon = {this.state.selectedTab === 'gc' ? require('./res/tabbar/index_2_selected@2x.png') : require('./res/tabbar/index_2_normal@2x.png')}
 		  title = "广场"
+		  selected={this.state.selectedIndex == 1}
+		  icon = {require('./res/tabbar/index_2_normal@2x.png')}
+		  selectedIcon = {require('./res/tabbar/index_2_selected@2x.png')}
           badge={this.state.notifCount > 0 ? this.state.notifCount : undefined}
-          selected={this.state.selectedTab === 'gc'}
+          
           onPress={() => {
             this.setState({
-              selectedTab: 'gc',
+              selectedIndex: 1,
               notifCount: this.state.notifCount + 1,
             });
           }}>
@@ -107,12 +110,13 @@ var TabBar = React.createClass({
         </TabBarIOS.Item>
 		{/**发现*/}
         <TabBarIOS.Item
-          icon = {this.state.selectedTab === 'fx' ? require('./res/tabbar/index_3_selected@2x.png') : require('./res/tabbar/index_3_normal@2x.png')}
-          title="发现"
-          selected={this.state.selectedTab === 'fx'}
+		  title="发现"
+		  selected={this.state.selectedIndex == 2}
+          icon = {require('./res/tabbar/index_3_normal@2x.png')}
+          selectedIcon = {require('./res/tabbar/index_3_selected@2x.png')}
           onPress={() => {
             this.setState({
-              selectedTab: 'fx',
+              selectedIndex: 2,
               presses: this.state.presses + 1
             });
           }}>
@@ -120,12 +124,13 @@ var TabBar = React.createClass({
         </TabBarIOS.Item>
 		{/**我*/}
 		<TabBarIOS.Item
-          icon = {this.state.selectedTab === 'me' ? require('./res/tabbar/index_4_selected@2x.png') : require('./res/tabbar/index_4_normal@2x.png')}
-          title="我"
-          selected={this.state.selectedTab === 'me'}
+		  title="我"
+		  selected={this.state.selectedIndex == 3}
+          icon = {require('./res/tabbar/index_4_normal@2x.png')}
+          selectedIcon = {require('./res/tabbar/index_4_selected@2x.png')}
           onPress={() => {
             this.setState({
-              selectedTab: 'me',
+              selectedIndex: 3,
               presses: this.state.presses + 1
             });
           }}>
