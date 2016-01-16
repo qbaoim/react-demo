@@ -12,23 +12,14 @@ import React, {
   View,
 } from 'react-native';
 
-import TabBar from './components/TabBar';
+import QBTabBar from './components/QBTabBar';
 
 class QBaoDemo extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <TabBar/>
-      </View>
+       <QBTabBar />
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    marginTop: 20,
-    flex: 1
-  }
-});
 
 AppRegistry.registerComponent('QBaoDemo', () => QBaoDemo);

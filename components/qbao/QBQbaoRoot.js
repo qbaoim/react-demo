@@ -1,3 +1,8 @@
+/**
+ * fengsh create 2016-1-16
+ * 
+ */
+
 'use strict';
 import React, {
   AppRegistry,
@@ -18,12 +23,12 @@ import BaogouSection from './BaogouSection';
 import AdvertiseBar from './AdvertiseBar';
 import StoreFloor from './StoreFloor';
 import RecommendStore from './RecommendStore';
-
-export default class QbaoMV extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-	  	<SearchBar/>
+  
+export default class QBQbaoRoot extends Component {  
+    render() {
+        return (
+         <View style={[styles.container,{backgroundColor: 'white'}]}>
+        <SearchBar/>
 		<ScrollView style = {[{backgroundColor:'red'}]}>
 			<Banner/>
 			<IconList/>
@@ -34,17 +39,18 @@ export default class QbaoMV extends Component {
 			<AdvertiseBar/>
 			<StoreFloor/>
 			<RecommendStore/>
-		</ScrollView>
-      </View>
-    );
-  }
+			</ScrollView>
+		</View>
+                        
+        );
+    }
 }
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 0,
-    flex: 1
+    flex: 1,
+	marginTop:0,
   }
 });
 
-AppRegistry.registerComponent('QbaoMV', () => QbaoMV);
+AppRegistry.registerComponent('QBQbaoRoot', () => QBQbaoRoot);
