@@ -15,7 +15,7 @@ import React, {
 export default class QBMeRoot extends Component {  
     render() {
         return (
-         <View style={[styles.container,{backgroundColor: 'white'}]}>
+         <View style={[styles.container,{backgroundColor: 'green'}]}>
 			 
         <Text>我首页</Text>
 		</View>
