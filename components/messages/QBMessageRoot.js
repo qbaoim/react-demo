@@ -12,7 +12,7 @@ import React, {
   View,
   } from 'react-native';
   
-export default class QBGuangChangeRoot extends Component {  
+export default class QBMessageRoot extends Component {  
     render() {
         return (
          <View style={[styles.container,{backgroundColor: 'white'}]}>
@@ -32,4 +32,4 @@ const styles = StyleSheet.create({
   }
 });
 
-AppRegistry.registerComponent('QBGuangChangeRoot', () => QBGuangChangeRoot);
+AppRegistry.registerComponent('QBMessageRoot', () => QBMessageRoot);

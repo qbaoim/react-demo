@@ -30,8 +30,8 @@ export default class QBQbaoRoot extends Component {
          <View style={[styles.container,{backgroundColor: 'white'}]}>
         <SearchBar/>
 		<ScrollView style = {[{backgroundColor:'red'}]}>
-			<Banner/>
-			<IconList/>
+			<IconList>
+			</IconList >
 			<NewsBar/>
 			<HomePromption/>
 			<LeipaiSection/>

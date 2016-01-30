@@ -1,14 +1,15 @@
 //
-//  QBCustomViewTest.h
+//  QBJSObject.h
 //  QBaoDemo
 //
-//  Created by fengsh on 16/1/12.
+//  Created by fengsh on 16/1/28.
 //  Copyright © 2016年 Facebook. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+
 #import "RCTBridgeModule.h"
 
-@interface QBCustomViewTest : NSObject<RCTBridgeModule>
+@interface QBJSObject : NSObject<RCTBridgeModule>
 
 @end

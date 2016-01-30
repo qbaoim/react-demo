@@ -12,7 +12,7 @@ import React, {
   View,
   } from 'react-native';
   
-import QBGuangChangRoot from './QBGuangChangRoot';
+import QBMessageRoot from './QBMessageRoot';
   
 export default class QBGuangChang extends Component {
 	_handleRightButtonPress(){
@@ -42,7 +42,7 @@ export default class QBGuangChang extends Component {
 			leftButtonIcon:require('../res/navimages/icon_topbar_chat@2x.png'),
 			onLeftButtonPress:this._handleLeftButtonPress,
 			onRightButtonPress: this._handleRightButtonPress,
-			component: QBGuangChangRoot,
+			component: QBMessageRoot,
 			}}/>
 			
 			
@@ -61,4 +61,4 @@ const styles = StyleSheet.create({
 }
 });
 
-AppRegistry.registerComponent('QBGuangChang', () => QBGuangChang);
+AppRegistry.registerComponent('QBMessage', () => QBMessage);

@@ -1,6 +1,6 @@
 /**
  * fengsh create 2016-1-15
- * 
+ *  
  */
  
 'use strict';
@@ -12,12 +12,23 @@ import React, {
   View,
 } from 'react-native';
 
-import QBTabBar from './components/QBTabBar';
+
+
+import { Provider } from 'react-redux';
+//配置reducer
+import configureStore from './modules/configureStore';
+import Application from './components/Application';
+
+const store = configureStore();
 
 class QBaoDemo extends Component {
   render() {
     return (
-       <QBTabBar />
+		//将store放进provider
+		//将provider放在组件顶层，并渲染
+	   <Provider store={store}>
+        <Application />
+	   </Provider>
     );
   }
 }

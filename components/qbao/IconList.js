@@ -11,7 +11,7 @@ export default class IconList extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.title}>Icon List</Text>
+        <Text style={styles.title}>Iconfdsafdafdas s List</Text>
       </View>
     );
   }

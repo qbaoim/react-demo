@@ -22,8 +22,10 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		9D0533DC1C59F68F00DC11DD /* QBReactCallNative.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0533DB1C59F68F00DC11DD /* QBReactCallNative.m */; };
+		9D0533DF1C59F7D800DC11DD /* QBJSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0533DE1C59F7D800DC11DD /* QBJSObject.m */; };
+		9D0533E21C5AECCF00DC11DD /* QBNativeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0533E11C5AECCF00DC11DD /* QBNativeView.m */; };
 		9D1810AB1C462E78003C0B13 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 9D1810AA1C462E78003C0B13 /* main.jsbundle */; };
-		9D672E651C44F1AF003DF095 /* QBCustomViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D672E641C44F1AF003DF095 /* QBCustomViewTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +106,20 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
+		9DAF09491C560B7A0021F8E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DAF09441C560B7A0021F8E3 /* RCTCamera.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4107012F1ACB723B00C6AA39;
+			remoteInfo = RCTCamera;
+		};
+		9DAF09581C560BAF0021F8E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DAF09541C560BAF0021F8E3 /* RNVectorIcons.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5DBEB1501B18CEA900B34395;
+			remoteInfo = RNVectorIcons;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -127,9 +143,15 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		9D0533DA1C59F68F00DC11DD /* QBReactCallNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBReactCallNative.h; sourceTree = "<group>"; };
+		9D0533DB1C59F68F00DC11DD /* QBReactCallNative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBReactCallNative.m; sourceTree = "<group>"; };
+		9D0533DD1C59F7D800DC11DD /* QBJSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBJSObject.h; sourceTree = "<group>"; };
+		9D0533DE1C59F7D800DC11DD /* QBJSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBJSObject.m; sourceTree = "<group>"; };
+		9D0533E01C5AECCF00DC11DD /* QBNativeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBNativeView.h; sourceTree = "<group>"; };
+		9D0533E11C5AECCF00DC11DD /* QBNativeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBNativeView.m; sourceTree = "<group>"; };
 		9D1810AA1C462E78003C0B13 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main.jsbundle; path = QBaoDemo/main.jsbundle; sourceTree = "<group>"; };
-		9D672E631C44F1AF003DF095 /* QBCustomViewTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBCustomViewTest.h; sourceTree = "<group>"; };
-		9D672E641C44F1AF003DF095 /* QBCustomViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBCustomViewTest.m; sourceTree = "<group>"; };
+		9DAF09441C560B7A0021F8E3 /* RCTCamera.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTCamera.xcodeproj; path = "../node_modules/react-native-camera/ios/RCTCamera.xcodeproj"; sourceTree = "<group>"; };
+		9DAF09541C560BAF0021F8E3 /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,7 +258,7 @@
 		13B07FAE1A68108700A75B9A /* QBaoDemo */ = {
 			isa = PBXGroup;
 			children = (
-				9D672E581C44F18D003DF095 /* nativemodules */,
+				9D0533D91C59F60C00DC11DD /* native */,
 				9D1810AA1C462E78003C0B13 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -277,6 +299,8 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
+				9DAF09441C560B7A0021F8E3 /* RCTCamera.xcodeproj */,
+				9DAF09541C560BAF0021F8E3 /* RNVectorIcons.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -310,14 +334,34 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9D672E581C44F18D003DF095 /* nativemodules */ = {
+		9D0533D91C59F60C00DC11DD /* native */ = {
 			isa = PBXGroup;
 			children = (
-				9D672E631C44F1AF003DF095 /* QBCustomViewTest.h */,
-				9D672E641C44F1AF003DF095 /* QBCustomViewTest.m */,
+				9D0533DD1C59F7D800DC11DD /* QBJSObject.h */,
+				9D0533DE1C59F7D800DC11DD /* QBJSObject.m */,
+				9D0533DA1C59F68F00DC11DD /* QBReactCallNative.h */,
+				9D0533DB1C59F68F00DC11DD /* QBReactCallNative.m */,
+				9D0533E01C5AECCF00DC11DD /* QBNativeView.h */,
+				9D0533E11C5AECCF00DC11DD /* QBNativeView.m */,
 			);
-			name = nativemodules;
-			path = QBaoDemo/nativemodules;
+			name = native;
+			path = QBaoDemo/native;
+			sourceTree = "<group>";
+		};
+		9DAF09451C560B7A0021F8E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DAF094A1C560B7A0021F8E3 /* libRCTCamera.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DAF09551C560BAF0021F8E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DAF09591C560BAF0021F8E3 /* libRNVectorIcons.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,6 +438,10 @@
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
 				},
 				{
+					ProductGroup = 9DAF09451C560B7A0021F8E3 /* Products */;
+					ProjectRef = 9DAF09441C560B7A0021F8E3 /* RCTCamera.xcodeproj */;
+				},
+				{
 					ProductGroup = 00C302B61ABCB90400DB3ED1 /* Products */;
 					ProjectRef = 00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */;
 				},
@@ -428,6 +476,10 @@
 				{
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+				},
+				{
+					ProductGroup = 9DAF09551C560BAF0021F8E3 /* Products */;
+					ProjectRef = 9DAF09541C560BAF0021F8E3 /* RNVectorIcons.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -509,6 +561,20 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		9DAF094A1C560B7A0021F8E3 /* libRCTCamera.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTCamera.a;
+			remoteRef = 9DAF09491C560B7A0021F8E3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9DAF09591C560BAF0021F8E3 /* libRNVectorIcons.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNVectorIcons.a;
+			remoteRef = 9DAF09581C560BAF0021F8E3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -561,8 +627,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D0533DC1C59F68F00DC11DD /* QBReactCallNative.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				9D672E651C44F1AF003DF095 /* QBCustomViewTest.m in Sources */,
+				9D0533DF1C59F7D800DC11DD /* QBJSObject.m in Sources */,
+				9D0533E21C5AECCF00DC11DD /* QBNativeView.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,14 +14,17 @@ var {
 	View
    } = React;
    
-//钱宝导航
-import QBQbao from './qbao/QBQbao';
-//广场导航
-import QBGuangChang from './guangchang/QBGuangChang';
-//发现导航
+//微商
+import QBWeiShang from './weishang/QBWeiShang';
+//消息
+import QBMessage from './messages/QBMessage';
+//社区
+import QBSns from './sns/QBSns';
+//发现
 import QBFaxian from './faxian/QBFaxian';
-//个人导航
+//我
 import QBMe from './me/QBMe';
+
 
 export default class QBTabBar extends Component {
 	constructor(props) {
@@ -35,9 +38,9 @@ export default class QBTabBar extends Component {
         return (
             <TabBarIOS tintColor= "#545454" 
 			style={[{backgroundColor: "#545454"}]}>
-				{/**首页*/}
+				{/**微商*/}
 				<TabBarIOS.Item
-				title="钱宝"
+				title="微商"
 				selected={this.state.selectedIndex == 0}
 				icon = {require('./res/tabbar/index_1_normal@2x.png')}
 				selectedIcon = {require('./res/tabbar/index_1_selected@2x.png')}
@@ -46,11 +49,11 @@ export default class QBTabBar extends Component {
 						selectedIndex: 0,
 					});
 				}}>
-					<QBQbao />
+					<QBWeiShang />
 				</TabBarIOS.Item>
-				{/**广场*/}
+				{/**消息*/}
 				<TabBarIOS.Item
-				title = "广场"
+				title = "消息"
 				selected={this.state.selectedIndex == 1}
 				icon = {require('./res/tabbar/index_2_normal@2x.png')}
 				selectedIcon = {require('./res/tabbar/index_2_selected@2x.png')}
@@ -59,11 +62,11 @@ export default class QBTabBar extends Component {
 						selectedIndex: 1,
 					});
 				}}>
-					<QBGuangChang />
+					<QBMessage />
 				</TabBarIOS.Item>
-				{/**发现*/}
+				{/**社区*/}
 				<TabBarIOS.Item
-				title="发现"
+				title="社区"
 				selected={this.state.selectedIndex == 2}
 				icon = {require('./res/tabbar/index_3_normal@2x.png')}
 				selectedIcon = {require('./res/tabbar/index_3_selected@2x.png')}
@@ -72,17 +75,30 @@ export default class QBTabBar extends Component {
 						selectedIndex: 2,
 					});
 				}}>
-					<QBFaxian />
+					<QBSns />
 				</TabBarIOS.Item>
+				{/**发现*/}
+				<TabBarIOS.Item
+				title="发现"
+				selected={this.state.selectedIndex == 3}
+				icon = {require('./res/tabbar/index_3_normal@2x.png')}
+				selectedIcon = {require('./res/tabbar/index_3_selected@2x.png')}
+				onPress={() => {
+					this.setState({
+						selectedIndex: 3,
+					});
+				}}>
+					<QBFaxian />
+					</TabBarIOS.Item>
 				{/**我*/}
 				<TabBarIOS.Item
 				title="我"
-				selected={this.state.selectedIndex == 3}
+				selected={this.state.selectedIndex == 4}
 				icon = {require('./res/tabbar/index_4_normal@2x.png')}
 				selectedIcon = {require('./res/tabbar/index_4_selected@2x.png')}
 				onPress={() => {
 					this.setState({
-						selectedIndex: 3,
+						selectedIndex: 4,
 					});
 				}}>
 					<QBMe />
