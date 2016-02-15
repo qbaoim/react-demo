@@ -25,7 +25,7 @@ export default class QBSns extends Component {
 		
 		<NavigatorIOS
 		//背景色
-		barTintColor="#e62f17"
+		barTintColor= '#e62f17'
 		//左右按钮标题的色
 		tintColor = 'white'
 		translucent={false}
@@ -34,7 +34,7 @@ export default class QBSns extends Component {
 		//标题色
 		titleTextColor = 'white'
 		initialRoute = {{
-			title: '发现',
+			title: '社区',
 			rightButtonIcon: require('../res/navimages/icon_topbar_scan@2x.png'),
 			onRightButtonPress: this._handleRightButtonPress,
 			component: QBSnsRoot,
