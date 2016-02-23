@@ -14,6 +14,7 @@ import React, {
   View
 } from 'react-native';
 
+import QBBaoGouView from './QBBaoGouView';
 //声明一个二维数组
 const CHANNELS = [[{
   name: '宝购',
@@ -58,7 +59,7 @@ export default class QBWSIconListView extends Component {
 	                		onPress={() => {
 	                  			this.props.navigator.push({
 	                    		name: 'channel',
-	                    		component: View,
+	                    		component: QBBaoGouView,
 	                    		params: {
 	                      			url: channel.url
 	                    		}

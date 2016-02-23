@@ -16,7 +16,7 @@ export default class Application extends Component {
           component: QBTabBar
         }}
         configureScene={() => {
-          return Navigator.SceneConfigs.PushFromRight;
+          return Navigator.SceneConfigs.HorizontalSwipeJump;
         }}
         renderScene={(route, navigator) => {
           let Component = route.component;

@@ -1,6 +1,6 @@
 /**
  * fengsh create 2016-1-16
- * 
+ * <QBMe navigator={this.props.navigator}/>
  */
 'use strict';
 
@@ -25,6 +25,8 @@ import QBFaxian from './faxian/QBFaxian';
 //我
 import QBMe from './me/QBMe';
 
+import QBNativeIOSVC from './QBNativevcIOS';
+
 
 export default class QBTabBar extends Component {
 	constructor(props) {
@@ -35,7 +37,9 @@ export default class QBTabBar extends Component {
     }
 	
 	render() {
+		
         return (
+				
             <TabBarIOS tintColor= "#545454" 
 			style={[{backgroundColor: "#545454"}]}>
 				{/**微商*/}
@@ -49,7 +53,7 @@ export default class QBTabBar extends Component {
 						selectedIndex: 0,
 					});
 				}}>
-					<QBWeiShang />
+					<QBWeiShang navigator={this.props.navigator}/>
 				</TabBarIOS.Item>
 				{/**消息*/}
 				<TabBarIOS.Item
@@ -62,7 +66,7 @@ export default class QBTabBar extends Component {
 						selectedIndex: 1,
 					});
 				}}>
-					<QBMessage />
+					<QBMessage navigator={this.props.navigator}/>
 				</TabBarIOS.Item>
 				{/**社区*/}
 				<TabBarIOS.Item
@@ -75,7 +79,7 @@ export default class QBTabBar extends Component {
 						selectedIndex: 2,
 					});
 				}}>
-					<QBSns />
+					<QBSns navigator={this.props.navigator}/>
 				</TabBarIOS.Item>
 				{/**发现*/}
 				<TabBarIOS.Item
@@ -88,7 +92,7 @@ export default class QBTabBar extends Component {
 						selectedIndex: 3,
 					});
 				}}>
-					<QBFaxian />
+					<QBFaxian navigator={this.props.navigator}/>
 					</TabBarIOS.Item>
 				{/**我*/}
 				<TabBarIOS.Item
@@ -101,8 +105,11 @@ export default class QBTabBar extends Component {
 						selectedIndex: 4,
 					});
 				}}>
-					<QBMe />
+					
+					
+				<QBNativeIOSVC />
 				</TabBarIOS.Item>
+				
 			</TabBarIOS>
         );
     }

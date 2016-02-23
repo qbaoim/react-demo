@@ -25,6 +25,10 @@
 		9D0533DC1C59F68F00DC11DD /* QBReactCallNative.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0533DB1C59F68F00DC11DD /* QBReactCallNative.m */; };
 		9D0533DF1C59F7D800DC11DD /* QBJSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0533DE1C59F7D800DC11DD /* QBJSObject.m */; };
 		9D0533E21C5AECCF00DC11DD /* QBNativeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0533E11C5AECCF00DC11DD /* QBNativeView.m */; };
+		9D155D941C75B0B4003437F5 /* QBCallNativeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D155D931C75B0B4003437F5 /* QBCallNativeVC.m */; };
+		9D155DA31C760AB6003437F5 /* QBDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D155DA21C760AB6003437F5 /* QBDemoVC.m */; };
+		9D155DA61C76AD61003437F5 /* QBMeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D155DA51C76AD61003437F5 /* QBMeVC.m */; };
+		9D155DA91C76AD9D003437F5 /* QBNativeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D155DA81C76AD9D003437F5 /* QBNativeVC.m */; };
 		9D1810AB1C462E78003C0B13 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 9D1810AA1C462E78003C0B13 /* main.jsbundle */; };
 /* End PBXBuildFile section */
 
@@ -149,6 +153,14 @@
 		9D0533DE1C59F7D800DC11DD /* QBJSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBJSObject.m; sourceTree = "<group>"; };
 		9D0533E01C5AECCF00DC11DD /* QBNativeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBNativeView.h; sourceTree = "<group>"; };
 		9D0533E11C5AECCF00DC11DD /* QBNativeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBNativeView.m; sourceTree = "<group>"; };
+		9D155D921C75B0B4003437F5 /* QBCallNativeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBCallNativeVC.h; sourceTree = "<group>"; };
+		9D155D931C75B0B4003437F5 /* QBCallNativeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBCallNativeVC.m; sourceTree = "<group>"; };
+		9D155DA11C760AB6003437F5 /* QBDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBDemoVC.h; path = QBaoDemo/QBDemoVC.h; sourceTree = "<group>"; };
+		9D155DA21C760AB6003437F5 /* QBDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QBDemoVC.m; path = QBaoDemo/QBDemoVC.m; sourceTree = "<group>"; };
+		9D155DA41C76AD61003437F5 /* QBMeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBMeVC.h; sourceTree = "<group>"; };
+		9D155DA51C76AD61003437F5 /* QBMeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBMeVC.m; sourceTree = "<group>"; };
+		9D155DA71C76AD9D003437F5 /* QBNativeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBNativeVC.h; sourceTree = "<group>"; };
+		9D155DA81C76AD9D003437F5 /* QBNativeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBNativeVC.m; sourceTree = "<group>"; };
 		9D1810AA1C462E78003C0B13 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main.jsbundle; path = QBaoDemo/main.jsbundle; sourceTree = "<group>"; };
 		9DAF09441C560B7A0021F8E3 /* RCTCamera.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTCamera.xcodeproj; path = "../node_modules/react-native-camera/ios/RCTCamera.xcodeproj"; sourceTree = "<group>"; };
 		9DAF09541C560BAF0021F8E3 /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
@@ -266,6 +278,10 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				9D155DA11C760AB6003437F5 /* QBDemoVC.h */,
+				9D155DA21C760AB6003437F5 /* QBDemoVC.m */,
+				9D155DA41C76AD61003437F5 /* QBMeVC.h */,
+				9D155DA51C76AD61003437F5 /* QBMeVC.m */,
 			);
 			name = QBaoDemo;
 			sourceTree = "<group>";
@@ -343,6 +359,10 @@
 				9D0533DB1C59F68F00DC11DD /* QBReactCallNative.m */,
 				9D0533E01C5AECCF00DC11DD /* QBNativeView.h */,
 				9D0533E11C5AECCF00DC11DD /* QBNativeView.m */,
+				9D155D921C75B0B4003437F5 /* QBCallNativeVC.h */,
+				9D155D931C75B0B4003437F5 /* QBCallNativeVC.m */,
+				9D155DA71C76AD9D003437F5 /* QBNativeVC.h */,
+				9D155DA81C76AD9D003437F5 /* QBNativeVC.m */,
 			);
 			name = native;
 			path = QBaoDemo/native;
@@ -628,9 +648,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D0533DC1C59F68F00DC11DD /* QBReactCallNative.m in Sources */,
+				9D155DA61C76AD61003437F5 /* QBMeVC.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				9D155DA91C76AD9D003437F5 /* QBNativeVC.m in Sources */,
 				9D0533DF1C59F7D800DC11DD /* QBJSObject.m in Sources */,
 				9D0533E21C5AECCF00DC11DD /* QBNativeView.m in Sources */,
+				9D155D941C75B0B4003437F5 /* QBCallNativeVC.m in Sources */,
+				9D155DA31C760AB6003437F5 /* QBDemoVC.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

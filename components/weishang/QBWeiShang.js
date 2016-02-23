@@ -23,7 +23,7 @@ export default class QBWeiShang extends Component {
   render() {
     return (
 		//微商首页
-		<QBWeiShangRoot />	
+		<QBWeiShangRoot  navigator={this.props.navigator}/>	
     );
   }
 }
